@@ -30,3 +30,21 @@
 // const minutes = String(time % 60).padStart(2, '0');
 // const hours = String(Math.floor(time / 60)).padStart(2, '0');
 // console.log(`${hours}:${minutes}`);
+
+
+/**
+ *? Напишіть цикл, який виводить у консоль
+ *? числа max від до min за спаданням
+ *? Виведіть у консоль усіх парних чисел від min до max
+ */
+
+// const max = 50;
+// const min = 23;
+
+// for (let i = max; i >= min; i -= 1) {
+//     console.log(i)
+// }
+
+// for (let i = min; i <= max; i += 1) {
+//     if (i % 2 === 0) {console.log(i)}
+// }
