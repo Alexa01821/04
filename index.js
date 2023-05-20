@@ -82,8 +82,8 @@
 *? Для обчислення суми з урахуванням відсотків використовуйте цикл for.
  */
 
-// const mounth = prompt("Введіть кількість місяців");
-// const salary = prompt("Введіть свою зп");
+// const mounth = Number(prompt("Введіть кількість місяців"));
+// const salary = Number(prompt("Введіть свою зп"));
 // let total = 0;
 
 // for (let i = 1; i <= mounth; i += 1) {
