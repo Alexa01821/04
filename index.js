@@ -121,3 +121,25 @@
 // for (const key of keys){
 //     console.log(`${key}: ${user[key]}`)
 // }
+
+
+// TASK 07
+
+/* Напишіть функцію, яка приймає об'єкт і рахує загальну суму зарплат працівників. */
+
+const someObj = {
+    worker1: 360,
+    worker2: 750,
+    worker3: 240,
+  };
+
+  function calcSalary(money) {
+    let totalSalary = 0;
+    for (const value of Object.values(money)) {
+        totalSalary += value;
+    }
+    return totalSalary;
+  }
+
+  calcSalary(someObj)
+  console.log(calcSalary(someObj))
