@@ -183,9 +183,47 @@
  *? https://coderoad.ru/208105/%D0%9A%D0%B0%D0%BA-%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C-%D1%81%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE-%D0%B8%D0%B7-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0-JavaScript
  */
 
-const obj = { a: 1, b: 2, c: 3 };
-function updateObject(object, name) {
- delete object[name]; 
-  return object;
-}
-console.log(updateObject(obj, 'c'));
+// const obj = { a: 1, b: 2, c: 3 };
+// function updateObject(object, name) {
+//  delete object[name]; 
+//   return object;
+// }
+// console.log(updateObject(obj, 'c'));
+
+// TASK 10
+// напиши код який із массиву arr видаляє елемент foo.
+// розвертає цей массив
+// і повертає рядок js is the best
+// вхідний массив не має змінюватись (мутується)
+
+// const arr = ["best", "the", "foo", "is", "js"];
+
+// const newArr = arr.slice(0);
+// newArr.splice( newArr.indexOf("foo"), 1);
+// const string = newArr.reverse().join(" ");
+// console.log(string);
+
+
+// const arr = ["best", "the", "foo", "is", "js"];
+
+// const string = arr
+//   .slice(0, arr.indexOf("foo"))
+//   .concat(arr.slice(arr.indexOf("foo") + 1, arr.length))
+//   .reverse()
+//   .join(" ");
+
+// console.log(string);
+
+
+
+// TASK 10
+///**
+// *? Зробіть знижку 20% на всі фрукти у масиві
+// *? Надайте ід для кожного продукту
+// */
+
+const fruits = [
+  { name: "apple", price: 200 },
+  { name: "orange", price: 300 },
+  { name: "grapes", price: 750 },
+];
