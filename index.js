@@ -353,3 +353,58 @@ const fruits = [
 // storage.removeItem("mango");
 
 // console.log(storage);
+
+// task 14
+//TODO:=============================================
+/**
+ *? Напиши клас Notes який управляє колекцією нотаток у
+ *? властивості items.
+ *? Нотатка - це об'єкт із властивостями text і priority.
+ *? Додай класу статичний метод Priopity,
+ *? який буде повертати об'єкт із пріоритетами.
+ *? Додай методи addNote(note), removeNote(text)
+ *? updatePriority(text, newPriority)
+ */
+// static Priority() {
+//     return {
+//       HIGHT: "hight",
+//       LOW: "low",
+//     };
+//   }
+
+// class Notes {
+//   static priority() {
+//     return {
+//       HIGHT: "hight",
+//       LOW: "low",
+//     };
+//   }
+//   constructor() {
+//     this.items = [];
+//   }
+//   findIdx(text) {
+//     return this.items.findIndex(item => item.text === text); 
+//   }
+//   addNote(note) {
+//     this.items.push(note);
+//   }
+//   removeNote(text) {
+//    const textIdx = this.findIdx(text);
+//     if (textIdx !== -1) {
+//       this.items.splice(textIdx, 1);
+//     }
+//   } 
+//   updatePriority(text, newPriority) {
+//     const textIdx = this.findIdx(text);
+//     if (textIdx !== -1) {
+//       this.items[textIdx].priority = newPriority;
+//     }
+//   }
+// }
+
+// const newNotes = new Notes();
+// newNotes.addNote({ text: "first note", priority: Notes.priority().LOW });
+// // newNotes.removeNote("first note");
+// newNotes.updatePriority("first note", "hight");
+
+// console.log(newNotes);
