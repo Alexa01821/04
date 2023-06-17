@@ -16,7 +16,6 @@
 //   alert("Не знаєте? ECMAScript!");
 // }
 
-
 //Task 2
 /**
  *? Напишіть програму, яка отримає від користувача
@@ -30,7 +29,6 @@
 // const minutes = String(time % 60).padStart(2, '0');
 // const hours = String(Math.floor(time / 60)).padStart(2, '0');
 // console.log(`${hours}:${minutes}`);
-
 
 /**
  *? Напишіть цикл, який виводить у консоль
@@ -76,10 +74,10 @@
 //TASK 05
 
 /**
-*? За кожен місяць податкова нараховує на ЗП розробника 5% від суми.
-*? Напишіть консольну функцію, на яку користувач вводить суму зп
-*? і кількість місяців за допомогою prompt() не забуваємо, що prompt повертає рядок.
-*? Для обчислення суми з урахуванням відсотків використовуйте цикл for.
+ *? За кожен місяць податкова нараховує на ЗП розробника 5% від суми.
+ *? Напишіть консольну функцію, на яку користувач вводить суму зп
+ *? і кількість місяців за допомогою prompt() не забуваємо, що prompt повертає рядок.
+ *? Для обчислення суми з урахуванням відсотків використовуйте цикл for.
  */
 
 // const mounth = Number(prompt("Введіть кількість місяців"));
@@ -91,8 +89,6 @@
 // }
 
 // console.log(total);
-
-
 
 //TASK 06
 
@@ -121,7 +117,6 @@
 // for (const key of keys){
 //     console.log(`${key}: ${user[key]}`)
 // }
-
 
 // TASK 07
 
@@ -162,13 +157,13 @@
 // ];
 
 // function calcTotalPrice(someStones, stonesName) {
-  
+
 //   for (const { name, price, quantity } of someStones) {
 //     if (name === stonesName) {
 //      return price * quantity;
 //     }
 //   }
-  
+
 //  return "Нічого не знайдено"
 // }
 
@@ -185,7 +180,7 @@
 
 // const obj = { a: 1, b: 2, c: 3 };
 // function updateObject(object, name) {
-//  delete object[name]; 
+//  delete object[name];
 //   return object;
 // }
 // console.log(updateObject(obj, 'c'));
@@ -203,7 +198,6 @@
 // const string = newArr.reverse().join(" ");
 // console.log(string);
 
-
 // const arr = ["best", "the", "foo", "is", "js"];
 
 // const string = arr
@@ -213,8 +207,6 @@
 //   .join(" ");
 
 // console.log(string);
-
-
 
 // TASK 10
 ///**
@@ -227,3 +219,72 @@ const fruits = [
   { name: "orange", price: 300 },
   { name: "grapes", price: 750 },
 ];
+// version 1
+// /* функція яка рахує задану знижку */
+// function discount(params) {
+//   for (const fruit of fruits) {
+//     console.log(fruit.price);
+//     fruit.price = fruit.price * params;
+//   }
+//   return fruits;
+// }
+// console.log(discount(0.8));
+// /* додавання ід для масиву об'єктів */
+// for (let i = 0; i < fruits.length; i += 1) {
+//   fruits[i].identify = i + 1;
+// }
+// console.log(fruits);
+
+
+// version 2
+// fruits.forEach((fruit, index) => fruit.id = index + 1);
+
+// const fruitsOnSale = fruits.map(({ price }) => price * 0.8);
+
+// console.log(fruits);
+// console.log(fruitsOnSale);
+
+
+// version 3
+// const discountFruits = fruits.map((fruit) => {
+//   return {
+//     ...fruit,
+//     price: fruit.price * 0.8,
+//     id: Date.now(),
+//   };
+// })
+// console.log(discountFruits);
+
+// TASK 11
+// /**
+//  *? З об'єкту concerts потрібно отримати масив
+//  *? в якому будуть лише імена міст.
+//  *? З масиву потрібно прибрати міста, в яких концерт уже пройшов і
+//  *? відсортувати їх у хронологічному порядку.
+//  *? Результат вивести у консоль.
+//  *? Очікуваний результат ["Умань", "Харків", "Одеса"]
+//  */
+// const concerts = {
+//   Київ: new Date("2023-07-01"),
+//   Умань: new Date("2023-07-02"),
+//   Вінниця: new Date("2024-04-21"),
+//   Одеса: new Date("2023-07-15"),
+//   Хмельницький: new Date("2020-04-18"),
+//   Харків: new Date("2023-07-10"),
+// };
+
+// const sortConcerts = (obj) => {
+//   // const keys = Object.keys(obj);
+//   // const concertsFilter = keys.filter(key => obj[key] > new Date());
+//   // const concertsDateSort = concertsFilter.sort((firstDate, secoundDate) => obj[firstDate] - obj[secoundDate]);
+//   // return concertsDateSort;
+
+//   return Object.keys(obj)
+//     .filter((key) => obj[key] > new Date())
+//     .sort(
+//       (firstDate, secoundDate) =>
+//         obj[firstDate] - obj[secoundDate]
+//     );
+// };
+
+// console.log(sortConcerts(concerts));
