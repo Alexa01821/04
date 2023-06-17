@@ -331,7 +331,7 @@ const fruits = [
 // const Storage = function (itemsArray) {
 //   this.items = itemsArray;
 // }
- 
+
 // Storage.prototype.getItems = function () {
 //   return this.items;
 // }
@@ -353,3 +353,37 @@ const fruits = [
 // storage.removeItem("mango");
 
 // console.log(storage);
+
+/**
+ *? Напиши клас Client який створює об'єкт
+ *? з ​​властивостями login email
+ *? Оголоси приватні властивості #login #email,
+ *? доступ до яких зроби через геттер та сеттер login email
+ */
+
+// class Client {
+//   #login;
+//   #email;
+
+//   constructor(login, email) {
+//     this.#login = login;
+//     this.#email = email;
+//   }
+//   set login(newLogin) {
+//     this.#login = newLogin;
+//   }
+//   get login() {
+//     return this.#login;
+//   }
+//   set email(newEmail) {
+//     this.#email = newEmail;
+//   }
+//   get email() {
+//     return this.#email;
+//   }
+// }
+
+// const newExemp = new Client("login", "gmail.com");
+// newExemp.login = "newLog";
+// console.log(newExemp.login);
+// console.log(newExemp);
