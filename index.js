@@ -235,7 +235,6 @@ const fruits = [
 // }
 // console.log(fruits);
 
-
 // version 2
 // fruits.forEach((fruit, index) => fruit.id = index + 1);
 
@@ -243,7 +242,6 @@ const fruits = [
 
 // console.log(fruits);
 // console.log(fruitsOnSale);
-
 
 // version 3
 // const discountFruits = fruits.map((fruit) => {
@@ -288,3 +286,30 @@ const fruits = [
 // };
 
 // console.log(sortConcerts(concerts));
+
+/* task12 */
+/**
+*? Поверніть об'єкт, в якому вказано кількість тегів.
+*? Очікуваний результат {js: 3, nodejs: 3, html: 2, css: 2, react: 2}
+
+ */
+// const tweets = [
+//   { id: "000", likes: 5, tags: ["js", "nodejs"] },
+//   { id: "001", likes: 2, tags: ["html", "css"] },
+//   { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+//   { id: "003", likes: 8, tags: ["css", "react"] },
+//   { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+// ];
+
+// const totalTags = (param) => {
+//   return param
+//     .flatMap((element) => element.tags)
+//     .reduce((acc, elem) => {
+//       return {
+//         ...acc,
+//         [elem]: acc[elem] ? acc[elem] + 1 : 1,
+//       };
+//     }, {});
+// };
+
+// console.log(totalTags(tweets));
