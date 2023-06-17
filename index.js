@@ -313,3 +313,43 @@ const fruits = [
 // };
 
 // console.log(totalTags(tweets));
+
+//TASK 13
+
+//TODO:=============================================
+/**
+ *? Напиши функцію конструктор Storage який створює об'єкти
+ *? Для управління складом товарів.
+ *? При виклику отримуватиме один агрумент - початковий масив товарів,
+ *? і записувати їх у властивість items.
+ *? Додай методи класу:
+ *? getItems() - повертайте масив товарів
+ *? addItems(item) - отримує новий товар та додає його до поточних
+ *? removeItem(item) - отримує товар і, якщо він є, видаляє його з поточних
+ */
+
+// const Storage = function (itemsArray) {
+//   this.items = itemsArray;
+// }
+ 
+// Storage.prototype.getItems = function () {
+//   return this.items;
+// }
+
+// Storage.prototype.addItems = function (item) {
+//   this.items.push(item);
+// }
+
+// Storage.prototype.removeItem = function (item) {
+// const indexElem = this.items.indexOf(item);
+//   if (indexElem !== -1) {
+//     this.items.splice(indexElem, 1);
+// }
+// }
+
+// const storage = new Storage(["apple", "banana", "mango"]);
+
+// storage.addItems("dsfjfa");
+// storage.removeItem("mango");
+
+// console.log(storage);
